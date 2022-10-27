@@ -313,6 +313,34 @@ footer{
     text-align: center;
     color: whitesmoke;
 }
+#tasks{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+#task-1,
+#task-2{
+    margin-bottom: 50px;
+}
+.test-block{
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 @media (max-width:767px){
     #right img{
         width: 100%;
