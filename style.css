@@ -94,6 +94,21 @@ nav{
     text-shadow: 10px 15px 10px rgba(0, 0, 0, 0.5);
     color: orange;
 }
+.guzior{
+    padding: 14px;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    background-color: black;
+    color: whitesmoke;
+    outline: 4px solid orange;
+}
+#clock{
+    width: 95%;
+    text-align: end;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 footer{
     background-color: black;
     color: orange;
@@ -228,6 +243,7 @@ footer{
 #price-list{
     width: 100%;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 #price-list table{
     width: 50%;
