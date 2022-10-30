@@ -111,25 +111,48 @@ nav{
 }
 footer{
     background-color: black;
-    color: orange;
+    color: whitesmoke;
     text-align: center;
-    font-size: 20px;
-    padding: 1px;
     margin-left: auto;
     margin-right: auto;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    height: 250px;
+    margin-top: 80px;
 }
-#news-container{
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    border-bottom: 1px solid orange;
+}
+.footer-text p{
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.footer-items{
+    display: flex;
+    width: 50%;
+    height: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.footer-items a{
+    text-decoration: underline dotted 1px;
+    color: whitesmoke;
+}
+#facts-container{
     width: 100%;
     margin-top: 150px;
     max-width: 1920px;
 }
-.news img{
+.facts img{
     width: 20%;
 }
-#news-list{
+#facts-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -137,10 +160,10 @@ footer{
     margin-left: 10%;
     margin-right: 10%;
 }
-.news:nth-child(3n+1){
+.facts:nth-child(3n+1){
     background-color: gold;
 }
-.news{
+.facts{
     width: 45%;
     background-color: orange;
     margin-bottom: 50px;
@@ -148,19 +171,19 @@ footer{
     border-radius: 50px;
     outline: 6px solid black;
 }
-.news h2{
+.facts h2{
     text-align: center;
     margin-bottom: 2%;
 }
-.news p{
+.facts p{
     font-size: 1.3rem;
     margin-left: 2%;
 }
-.news div{
+.facts div{
     display: flex;
     align-items: center;
 }
-.news:hover{
+.facts:hover{
     transform: scale(1.25);
     transition: all .5s;
     background-color: whitesmoke;
@@ -202,6 +225,7 @@ footer{
 #species-container{
     width: 100%;
     margin-top: 80px;
+    margin-bottom: 150px;
 }
 .species{
     width: 70%;
@@ -228,11 +252,16 @@ footer{
 .species p{
     font-size: 1.3rem;
 }
-#news-background{
-    background-image: url(https://cdn.pixabay.com/photo/2014/09/27/13/46/question-mark-463497_960_720.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#fun-fuct-div{
+    width: 50%;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+}
+#fun-fuct-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 500px 0px 0px 500px;
 }
 #about-background{
     background-image: url(https://cdn.pixabay.com/photo/2020/02/16/10/16/orange-4853051_960_720.jpg);
@@ -321,7 +350,8 @@ footer{
     margin-bottom: 150px;
 }
 #task-1,
-#task-2{
+#task-2,
+#task-3{
     margin-bottom: 50px;
 }
 .test-block{
@@ -370,21 +400,21 @@ footer{
         margin-top: 200px;
         font-size: 2.3rem;
     }
-    .news:hover{
+    .facts:hover{
         transform: none;
         background-color: orange;
     }
-    .news:nth-child(3n+1){
+    .facts:nth-child(3n+1){
         background-color: gold;
     }
-    .news{
+    .facts{
         width: 100%;
         flex-wrap: wrap;
     }
-    .news div img{
+    .facts div img{
         width: 20%;
     }
-    .news p{
+    .facts p{
         margin-left: 5%;
     }
 }
@@ -417,21 +447,21 @@ footer{
     .title{
         margin-top: 150px;
     }
-    .news:hover{
+    .facts:hover{
         transform: none;
         background-color: orange;
     }
-    .news:nth-child(3n+1){
+    .facts:nth-child(3n+1){
         background-color: gold;
     }
-    .news{
+    .facts{
         width: 100%;
         flex-wrap: wrap;
     }
-    .news div img{
+    .facts div img{
         width: 15%;
     }
-    .news p{
+    .facts p{
         margin-left: 5%;
     }
 }
@@ -456,21 +486,21 @@ footer{
         max-width: 800px;
         max-height: 800px;
     }
-    .news:hover{
+    .facts:hover{
         transform: none;
         background-color: orange;
     }
-    .news:nth-child(3n+1){
+    .facts:nth-child(3n+1){
         background-color: gold;
     }
-    .news{
+    .facts{
         width: 47%;
         justify-content: space-between;
     }
-    .news div img{
+    .facts div img{
         width: 25%;
     }
-    .news p{
+    .facts p{
         margin-left: 5%;
     }
 }
@@ -494,7 +524,7 @@ footer{
         max-width: 800px;
         max-height: 800px;
     }
-    .news div img{
+    .facts div img{
         width: 20%;
     }
 }
