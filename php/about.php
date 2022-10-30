@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>about</title>
 </head>
-<body id="about-background">
+<body>
     <div id="container">
         <header>
             <nav>
@@ -27,14 +27,13 @@
                 </ul>
             </nav>
         </header>
-        <section class="title">
-            <h1>O mnie</h1>
-        </section>
-        <section id="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
+        <section id="about" class="about-background">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo quo repudiandae ea placeat officia asperiores dolorem deleniti fuga nihil?</p>
+            </div>
         </section>
         <section id="tasks">
             <div id="task-1">

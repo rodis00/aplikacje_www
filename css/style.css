@@ -117,7 +117,6 @@ footer{
     margin-right: auto;
     width: 100%;
     height: 250px;
-    margin-top: 80px;
 }
 .footer-text{
     display: flex;
@@ -196,9 +195,11 @@ footer{
     margin-top: 80px;
 }
 #about{
-    margin-top: 100px;
-    margin-bottom: 150px;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #about p{
     background-color: rgba(0, 0, 0, 0.8);
@@ -207,9 +208,9 @@ footer{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
     font-size: 1.5rem;
     border: 6px solid orange;
+    margin-top: 50px;
 }
 #about p:hover{
     background-color: rgba(0, 0, 0, 1);
@@ -263,7 +264,7 @@ footer{
     height: 100%;
     border-radius: 500px 0px 0px 500px;
 }
-#about-background{
+.about-background{
     background-image: url(https://cdn.pixabay.com/photo/2020/02/16/10/16/orange-4853051_960_720.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -344,15 +345,15 @@ footer{
 }
 #tasks{
     width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 150px;
+    background-color: rgba(243, 149, 8, 0.8);
 }
 #task-1,
 #task-2,
 #task-3{
-    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px 0 20px 0;
 }
 .test-block{
     width: 200px;
