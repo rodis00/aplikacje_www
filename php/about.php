@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$_SESSION['active'] = true;
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -85,6 +89,17 @@
             <div id="task-3">
                 <div>
                     <?php include '../php/labor_162580_4.php';?>
+                </div>
+            </div>
+            <div id="task-4">
+                <div>
+                    <?php require_once '../php/labor_162580_4.php';?>
+                    <form action="" method="get">
+                        <input type="text" name="number">Podaj liczbę i wciśnij enter:
+                    </form>
+                    <form action="" method="post">
+                        <input type="text" name="number2">Podaj liczbę i wciśnij enter:
+                    </form>
                 </div>
             </div>
         </section>
