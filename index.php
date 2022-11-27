@@ -22,30 +22,42 @@ $_SESSION['active'] = true;
         <header>
             <nav>
                 <ul class="nav-items">
-                    <li class="active"><a href="index.php?page=home">home</a></li>
-                    <li><a href="index.php?page=fun_fact">fun fuct</a></li>
-                    <li><a href="index.php?page=species">species</a></li>
-                    <li><a href="index.php?page=events">events</a></li>
-                    <li><a href="index.php?page=store">store</a></li>
-                    <li><a href="index.php?page=about">about</a></li>
-                    <li><a href="index.php?page=movies">movies</a></li>
+                    <li class="active"><a href="index.php?page=home&id=1">home</a></li>
+                    <li><a href="index.php?page=fun_fact&id=2">fun fuct</a></li>
+                    <li><a href="index.php?page=species&id=3">species</a></li>
+                    <li><a href="index.php?page=events&id=4">events</a></li>
+                    <li><a href="index.php?page=store&id=5">store</a></li>
+                    <li><a href="index.php?page=about&id=6">about</a></li>
+                    <li><a href="index.php?page=movies&id=7">movies</a></li>
                     <li><a href="mailto:162580@student.uwm.edu.pl?/Send mail">contact</a></li>
                 </ul>
             </nav>
         </header>
         <?php
             error_reporting(E_ALL^E_NOTICE^E_WARNING);
-            $prefix = './html/';
-            $pageName = $_GET['page'];
-            $suffix = '.html';
-            $page = $prefix.$pageName.$suffix;
-
-            if(file_exists($page)){
-                include($page);
+            include('cfg.php');
+            include('./php/showpage.php');
+            if(!isset($_GET['id'])){
+                $id = 1;
             }
             else{
-                include($prefix.'error.html');
+                $id = $_GET['id'];
             }
+            echo PokazPodstrone($id, $conn);
+            // $prefix = './html/';
+            // $pageName = $_GET['page'];
+            // $suffix = '.html';
+            // $page = $prefix.$pageName.$suffix;
+            
+            // if(!isset($_GET['page'])){
+            //     $page = './html/home.html';
+            // }
+            // if(file_exists($page)){
+            //     include($page);
+            // }
+            // else{
+            //     include($prefix.'error.html');
+            // }
         ?>
         <footer>
             <div class="footer-text">
