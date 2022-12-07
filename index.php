@@ -22,14 +22,14 @@ $_SESSION['active'] = true;
         <header>
             <nav>
                 <ul class="nav-items">
-                    <li class="active"><a href="index.php?page=home&id=1">home</a></li>
-                    <li><a href="index.php?page=fun_fact&id=2">fun fuct</a></li>
-                    <li><a href="index.php?page=species&id=3">species</a></li>
-                    <li><a href="index.php?page=events&id=4">events</a></li>
-                    <li><a href="index.php?page=store&id=5">store</a></li>
-                    <li><a href="index.php?page=about&id=6">about</a></li>
-                    <li><a href="index.php?page=movies&id=7">movies</a></li>
-                    <li><a href="mailto:162580@student.uwm.edu.pl?/Send mail">contact</a></li>
+                    <li <?php if ($_GET['id']==1){echo "class='active'";}?>><a href="index.php?page=home&id=1">home</a></li>
+                    <li <?php if ($_GET['id']==2){echo "class='active'";}?>><a href="index.php?page=fun_fact&id=2">fun fuct</a></li>
+                    <li <?php if ($_GET['id']==3){echo "class='active'";}?>><a href="index.php?page=species&id=3">species</a></li>
+                    <li <?php if ($_GET['id']==4){echo "class='active'";}?>><a href="index.php?page=events&id=4">events</a></li>
+                    <li <?php if ($_GET['id']==5){echo "class='active'";}?>><a href="index.php?page=store&id=5">store</a></li>
+                    <li <?php if ($_GET['id']==6){echo "class='active'";}?>><a href="index.php?page=about&id=6">about</a></li>
+                    <li <?php if ($_GET['id']==7){echo "class='active'";}?>><a href="index.php?page=movies&id=7">movies</a></li>
+                    <li <?php if ($_GET['id']==8){echo "class='active'";}?>><a href="mailto:162580@student.uwm.edu.pl?/Send mail">contact</a></li>
                 </ul>
             </nav>
         </header>
