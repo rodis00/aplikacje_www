@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $_SESSION['active'] = true;
+if (!isset($_GET['id'])) $_GET['id'] = 1;
 ?>
 <!DOCTYPE html>
 <html lang="pl">

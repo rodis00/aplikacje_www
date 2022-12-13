@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, .90);
+}
+
+#welcome-user{
+    width: 100%;
+    padding: 20px;
+    color: orange;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#welcome-user::before{
+    content: 'Witaj ';
+}
+
+#logout_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    background-color: orange;
+    padding: 8px;
+    color: black;
+    border-radius: 12px;
+}
+
+#logout_btn:hover{
+    background-color: rgb(201, 140, 28);
+}
+
+#sites{
+    font-size: 2rem;
+    margin-top: 150px;
+    width: 47%;
+    margin-left: 3%;
+    float: left;
+}
+td, th{
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(226, 149, 5);
+}
+
+#sites tr:nth-child(even){
+    background-color: #050505;
+    color: whitesmoke;
+}
+
+#sites tr:nth-child(odd) {
+    background-color: rgb(199, 116, 32);
+}
+
+.editForm{
+    width: 40%;
+    float: left;
+    margin-top: 150px;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+
+.editForm form{
+    text-align: center;
+}
+
+.editForm form h1{
+    color: orange;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.editForm input{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 14px;
+}
+
+.editForm input:focus{
+    outline: 4px solid orange;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.editForm form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.editForm textarea{
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    padding: 2%;
+}
+label{
+    
+    font-size: 2rem;
+    color: white;
+}
+.checkbox{
+    width: 10% !important;
+    color: white !important;
+    outline: none !important;
+}
+
+.editForm textarea:focus{
+    outline: 4px solid orange;
+    background-color: lightgray;
+    font-weight: bold;
+}
+.editForm form div div{
+    width: 40%;
+
+}
+.edit, .delete, .add{
+    width: 100%;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5%;
+}
+
+.edit{
+    background-color: rgb(233, 100, 12);
+}
+
+.edit:hover{
+    background-color: rgb(170, 105, 8);
+    cursor: pointer;
+}
+
+.delete{
+    background-color: red;
+}
+
+.delete:hover{
+    background-color: rgb(211, 21, 21);
+    cursor: pointer;
+}
+.add{
+    background-color: rgb(44, 197, 10);
+}
+
+.add:hover{
+    background-color: rgb(51, 164, 16);
+    cursor: pointer;
+}
