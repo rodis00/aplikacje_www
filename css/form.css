@@ -45,11 +45,18 @@ input:focus{
 
 .button{
     padding: 8px;
-    width: 50%;
+    width: 65%;
     margin-top: 24px;
 }
 
-.button:hover{
+.remember{
+    position: fixed;
+    top: 60vh;
+    left: 58vw;
+    font-size: 1.2rem;
+}
+
+.button:hover, .remember:hover{
     background-color: orange;
     transition: all ease .3s;
     font-weight: bolder;

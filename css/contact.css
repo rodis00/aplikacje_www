@@ -1,0 +1,102 @@
+#contact{
+    color: black;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact form{
+    width: 40%;
+    background-color: rgb(240, 125, 10);
+    font-size: 2rem;
+    align-items: center;
+    border-radius: 50px 50px 5px 5px ;
+    padding: 2%;
+}
+#contact h1{
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: 5px;
+}
+
+#contact h3{
+    margin-top: 12px;
+    font-size: 1.8rem;
+}
+
+#contactForm input{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+#contactForm textarea{
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+#contactForm input:focus, #contactForm textarea:focus{
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+#contactForm .send{
+    width: 50%;
+    padding: 2%;
+    background-color: lightgray;
+    margin-top: 20px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+}
+
+#contactForm div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+#contactForm .send:hover{
+    background-color: gray;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 4px solid black;
+}
+
+.error{
+    background-color: red;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+.error p{
+    font-size: 2rem;
+    color: black;
+}
+
+.correct{
+    background-color: green;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+.correct p{
+    font-size: 2rem;
+    color: black;
+}

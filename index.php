@@ -11,6 +11,7 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Adrian Sidor">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="img/orange_favicon.ico" type="image/x-icon">
     <script src="./js/kolorujtlo.js" type="text/javascript"></script>
@@ -30,7 +31,7 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
                     <li <?php if ($_GET['id']==5){echo "class='active'";}?>><a href="index.php?page=store&id=5">store</a></li>
                     <li <?php if ($_GET['id']==6){echo "class='active'";}?>><a href="index.php?page=about&id=6">about</a></li>
                     <li <?php if ($_GET['id']==7){echo "class='active'";}?>><a href="index.php?page=movies&id=7">movies</a></li>
-                    <li <?php if ($_GET['id']==8){echo "class='active'";}?>><a href="mailto:162580@student.uwm.edu.pl?/Send mail">contact</a></li>
+                    <li <?php if ($_GET['id']==8){echo "class='active'";}?>><a href="index.php?page=contact&id=8">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,6 +39,8 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
             error_reporting(E_ALL^E_NOTICE^E_WARNING);
             include('cfg.php');
             include('./php/showpage.php');
+            include('./php/contact.php');
+
             if(!isset($_GET['id'])){
                 $id = 1;
             }
@@ -45,6 +48,11 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
                 $id = $_GET['id'];
             }
             echo PokazPodstrone($id, $conn);
+
+            if($id == 8){
+                
+                WyslijMailKontak();
+            }
             // $prefix = './html/';
             // $pageName = $_GET['page'];
             // $suffix = '.html';
@@ -65,14 +73,14 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
                 <p>AS &copy 2022</p>
             </div>
             <div class="footer-items">
-                <div><a href="index.php?page=home">home</a></div>
-                <div><a href="index.php?page=fun_fact">fun fuct</a></div>
-                <div><a href="index.php?page=species">species</a></div>
-                <div><a href="index.php?page=events">events</a></div>
-                <div><a href="index.php?page=store">store</a></div>
-                <div><a href="index.php?page=about">about</a></div>
-                <div><a href="index.php?page=movies">movies</a></div>
-                <div><a href="mailto:162580@student.uwm.edu.pl?/Send mail">contact</a></div>
+                <div><a href="index.php?page=home&id=1">home</a></div>
+                <div><a href="index.php?page=fun_fact&id=2">fun fuct</a></div>
+                <div><a href="index.php?page=species&id=3">species</a></div>
+                <div><a href="index.php?page=events&id=4">events</a></div>
+                <div><a href="index.php?page=store&id=5">store</a></div>
+                <div><a href="index.php?page=about&id=6">about</a></div>
+                <div><a href="index.php?page=movies&id=7">movies</a></div>
+                <div><a href="index.php?page=contact&id=8">contact</a></div>
             </div>
         </footer>
     </div>
