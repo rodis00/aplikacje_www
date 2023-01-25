@@ -46,6 +46,7 @@ $_SESSION['active'] = true;
                 </form>
             </div>
             <div id="task-2">
+                <!-- skrypt powiekszajacy diva z kazdym kliknieciem na niego -->
                 <div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększe</div>
                 <script>
                     $("#animacjaTestowa1").on("click", function(){
@@ -56,6 +57,7 @@ $_SESSION['active'] = true;
                             borderWidth: "10px"
                         }, 1500);
                     });
+                    // skrypt powiekszajacy diva po najechaniu kursorem
                 </script>
                 <div id="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększe</div>
                 <script>
@@ -71,6 +73,7 @@ $_SESSION['active'] = true;
                             }, 800);
                         }
                     });
+                    // skrypt powiekszajacy diva po klikaniu w niego
                 </script>
                 <div id="animacjaTestowa3" class="test-block">Klikaj, abym urósł</div>
                 <script>
@@ -94,10 +97,12 @@ $_SESSION['active'] = true;
             <div id="task-4">
                 <div>
                     <?php require_once '../php/labor_162580_4.php';?>
-                    <form action="" method="get">
+                    <!-- test przeslania dancyh z formularza za pomoca metody GET -->
+                    <form action="" method="GET">
                         <input type="text" name="number">Podaj liczbę i wciśnij enter:
                     </form>
-                    <form action="" method="post">
+                    <!-- test przeslania danych z formularza za pomoca metody POST -->
+                    <form action="" method="POST">
                         <input type="text" name="number2">Podaj liczbę i wciśnij enter:
                     </form>
                 </div>

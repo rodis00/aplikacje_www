@@ -13,7 +13,9 @@
         require_once("../cfg.php");
         require_once("./admin.php");
         include("../php/contact.php");
+        // wyswietlenei formularza
         echo FormularzLogowania();
+        // uzycie metody przypomnij haslo
         PrzypomnijHaslo($pass);
         if(!isset($_POST['x2_submit'])){
             if(isset($_POST['login_email']) && isset($_POST['login_pass'])){
@@ -39,7 +41,7 @@
             }
         }
         else{
-            // echo "wyslao";
+            // echo "wyslano";
         }
     ?>
 </body>

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Lemonada', cursive;
+    display: flex;
+    justify-content: center;
+
+}
+
+#cart{
+    /* background-color: red; */
+    margin-top: 8rem;
+}
+
+#clock{
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+table{
+    font-size: 1.5rem;
+}
+
+th{
+    background-color: orange;
+    padding: 1rem;
+}
+
+td{
+    border: 1px solid orange;
+    padding: 1rem;
+
+}
+
+th, td, h2{
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+input[type='submit']{
+    background-color: green;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+input[type='submit']:hover{
+    background-color: greenyellow;
+    cursor: pointer
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+}
+

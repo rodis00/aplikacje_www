@@ -15,6 +15,7 @@ $a = 5;
 $b = 10;
 $c = 15;
 
+// funkcja sprawdzajaca warunki if
 if($a > $b)
     echo "$a".' > '."$b".'<br>';
 else if($c > $a)
@@ -22,6 +23,8 @@ else if($c > $a)
 else
     echo "$b".' > '."$a".'<br>'; 
 
+// switch wyswietla aktualny dzien
+// pobiera dzien z metody date()
 $day = date('l') ;
 $text = 'Dziś jest: ';
 switch($day){
@@ -50,10 +53,12 @@ switch($day){
 
 echo '<br> zad_2 c)'.'<br>';
 echo 'Pętla for <br>';
+// test petli for
 for($i=0; $i<5; $i++){
     echo 'i = '.($i + $i * 3 - $i / 2).'<br>';
 }
 echo 'pętla while <br>';
+// test petli while
 $a = 5;
 while($a > 0){
     echo $a.'<br>';
@@ -61,7 +66,8 @@ while($a > 0){
 }
 
 echo '<br>zad_2 d) <br>';
-
+// weryfikacja zmiennych pobieranych za 
+// pomoca metody GET i POST
 if(isset($_GET['number']))
     echo 'liczba z GET = '.$_GET['number'].'<br>';
 

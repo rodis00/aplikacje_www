@@ -1,5 +1,6 @@
 <?php
-
+// metoda PokazPodstrone wyswietla content podstrony
+// z bazy danych o id przekazanym w funkcji
 function PokazPodstrone($id, $conn){
     
     $id_clear = htmlspecialchars($id);

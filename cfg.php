@@ -8,6 +8,7 @@ $baza = 'moja_strona';
 $login = 'admin';
 $pass = 'admin';
 
+// polaczenie z baza danych
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $baza);
 
 if(!$conn){

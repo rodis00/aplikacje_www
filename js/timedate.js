@@ -1,3 +1,4 @@
+// metoda pobierajaca aktualna date
 function gettheDate()
 {
     Todays = new Date();
@@ -7,14 +8,14 @@ function gettheDate()
 
 var timerID = null;
 var timerRunning = false;
-
+// zatrzymuje zegar
 function stopClock()
 {
     if(timerRunning)
         clearTimeout(timerID);
     timerRunning = false;
 }
-
+// uruchamia zegar
 function startClock()
 {
     stopClock();
@@ -22,6 +23,7 @@ function startClock()
     showTime();
 }
 
+// pokazuje skonfigurowany czas 
 function showTime()
 {
     var now = new Date();

@@ -169,3 +169,55 @@ label{
     background-color: rgb(51, 164, 16);
     cursor: pointer;
 }
+
+#podkategoria{
+    text-align: left !important;
+}
+
+#products{
+    font-size: 1.9rem;
+    margin-top: 150px;
+    width: 47%;
+    margin-left: 3%;
+    float: left;
+}
+td, th{
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(226, 149, 5);
+}
+
+#products tr:nth-child(even){
+    background-color: #050505;
+    color: whitesmoke;
+}
+
+#products tr:nth-child(odd) {
+    background-color: rgb(199, 116, 32);
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+}
+
+.description{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+input[type="file"]{
+    background-color: whitesmoke;
+}
+
+.date{
+    color: whitesmoke;
+    font-size: 2rem;
+}

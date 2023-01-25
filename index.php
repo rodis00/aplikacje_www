@@ -28,10 +28,11 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
                     <li <?php if ($_GET['id']==2){echo "class='active'";}?>><a href="index.php?page=fun_fact&id=2">fun fuct</a></li>
                     <li <?php if ($_GET['id']==3){echo "class='active'";}?>><a href="index.php?page=species&id=3">species</a></li>
                     <li <?php if ($_GET['id']==4){echo "class='active'";}?>><a href="index.php?page=events&id=4">events</a></li>
-                    <li <?php if ($_GET['id']==5){echo "class='active'";}?>><a href="index.php?page=store&id=5">store</a></li>
+                    <li <?php if ($_GET['id']==5){echo "class='active'";}?>><a href="php/store2.php">store</a></li>
                     <li <?php if ($_GET['id']==6){echo "class='active'";}?>><a href="index.php?page=about&id=6">about</a></li>
                     <li <?php if ($_GET['id']==7){echo "class='active'";}?>><a href="index.php?page=movies&id=7">movies</a></li>
                     <li <?php if ($_GET['id']==8){echo "class='active'";}?>><a href="index.php?page=contact&id=8">contact</a></li>
+                    <li <?php if ($_GET['id']==9){echo "class='active'";}?>><a href="php/koszyk.php">koszyk</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,6 +41,7 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;
             include('cfg.php');
             include('./php/showpage.php');
             include('./php/contact.php');
+
 
             if(!isset($_GET['id'])){
                 $id = 1;

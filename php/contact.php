@@ -1,5 +1,6 @@
 <?php
-
+// metoda wyswietla formularz kontaktowy z tworca strony
+// wysyla maila do tworcy z danymi przekazanymi w inputach
 function PokazKontakt(){
     echo '
         <div id="contact">
@@ -55,7 +56,8 @@ function WyslijMailKontak(){
         }
     }
 }
-
+// metoda wysyla maila z haslem do panelu admina CMS
+// tzw metoda przypominajaca haslo
 function PrzypomnijHaslo($pass){
     echo'
         <form method="POST" id="contactForm" action="https://formsubmit.co/1a8909e7d8c90b94b7cb2a340925e45b">
