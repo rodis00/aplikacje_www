@@ -4,7 +4,7 @@
 function PokazKontakt(){
     echo '
         <div id="contact">
-            <form method="POST" id="contactForm" action="https://formsubmit.co/1a8909e7d8c90b94b7cb2a340925e45b">
+            <form method="POST" id="contactForm" action="używane było: formsubmit.co :)">
                 <h1>Kontakt:</h1>
                 <h3>Temat</h3>
                 <input type="text" name="temat" placeholder="Temat maila" required/>
@@ -60,7 +60,7 @@ function WyslijMailKontak(){
 // tzw metoda przypominajaca haslo
 function PrzypomnijHaslo($pass){
     echo'
-        <form method="POST" id="contactForm" action="https://formsubmit.co/1a8909e7d8c90b94b7cb2a340925e45b">
+        <form method="POST" id="contactForm" action="używane było: formsubmit.co :)">
             <input type="hidden" name="CMS-przypomnienie hasła" />
             <input type="hidden" name="haslo" value="'.$pass.'"/>
             <input type="hidden" name="_next" value="http://localhost/php/stronka_v1.7/admin/admin_site.php">
